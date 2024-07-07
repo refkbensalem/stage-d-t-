@@ -1,0 +1,86 @@
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    @media screen and (max-width: 680px) {
+        background: none;
+        grid-template-columns: 1fr;
+      }
+    
+    .text{
+        background: $black1;
+        display: block;
+        @media screen and (max-width: 680px) {
+            display: none;
+          }
+         h3{
+            font-family: $font1;
+            color: $marron1;
+            font-size: 4.5rem;
+            font-weight: 100;
+            margin-top: 50px;
+            margin-left: -210px;
+         }
+         p{
+            
+            font-family: $font3;
+            font-size: 20px;
+            font-weight: 30;
+            line-height: 1.5;
+            max-width: 600px;
+            margin-left: 270px;
+            color: grey;
+         }
+    }
+    .form{
+        color: $white1;
+        background: rgb(37, 33, 33);
+        @media screen and (max-width: 680px) {
+            padding-left: 20px;
+          }
+
+        .mail{
+            margin-top: 40px;
+            position: relative;
+            left: -300px;
+            h4{
+                font-size: 1.5rem;
+                position: relative;
+                left: -50px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-family: $font2;
+            }
+            input{
+                border: 1px solid grey;
+                width: 350px;
+                height: 30px;
+                background: transparent;
+                margin-left: 150px;
+                @media screen and (max-width: 680px) {
+                    width: 150px;
+                  }
+            }
+        }
+        .media{
+            display: flex;
+            margin-top: 100px;
+            margin-left: 60px;
+
+            h4{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                @media screen and (max-width: 680px) {
+                    display: none;
+                  }
+            }
+            i{
+                margin-left: 60px;
+                color: grey;
+                font-size: 1.5rem;
+            }
+
+
+        }
+    }
+}

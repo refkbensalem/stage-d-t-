@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "allura-regular";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins-medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+$font1: allura-regular, sans-serif;
+$font2: poppins-medium, serif;
+$font3:roboto-light, sans-serif;
+$black1:rgb(17, 17, 17);
+$white1:white;
+$grey1:rgb(240,240,240) ;
+$marron1:rgb(153,113,53);
+$black2:rgb(55,49,49);
+$yello:rgb(234,200,95);
+
+@mixin title{
+    font-family: $font2;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+@mixin ptitle{
+    font-family: $font1;
+    color: $marron1;
+     
+}
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    transition: .2s linear;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a
+{
+    color: $white1;
+}
+body{
+    
+    text-align: center;
+    min-width: 1300px;
+    margin: 0 auto;
+
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black1;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes animBefore {
+            to{
+                opacity: 0;
+                font-size: 6rem;
+            }
+        }
+    }
+}
+header{
+    background: url(../img/img/bg-slider-06.jpg) center/cover;
+    
+}
+.section2{
+  position: relative;
+  padding-bottom: 100px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 800px;
+    margin-top: -400px;
+    width: 100%;
+    background: url(../img/img/bg-menu-01.jpg) center/cover;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+    
+
+}
+.section5 .left-part .event1 .date{
+    background: url(../img/img/event-01.jpg) center/cover;
+    width: 100%;
+
+}
+.section5 .left-part .event2 .date{
+    background: url(../img/img/event-02.jpg) center/cover;
+    width: 100%;
+
+}
+.section5 .right-part{
+    background: url(../img/img/event-03.jpg) center/cover;
+    width: 100%;
+}
+
